@@ -1,0 +1,65 @@
+---
+title: "Lab 01: Bash and Git"
+author: "YOUR NAME HERE"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    highlight: pygments
+urlcolor: "blue"
+params:
+  solutions: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo       = params$solutions, 
+                      eval       = params$solutions,
+                      fig.align  = "center",
+                      fig.height = 3, 
+                      fig.width  = 5)
+```
+
+# Instructions
+
+- Copyright David Gerard, do not post online or share with others.
+- Each time you answer one of the questions, stage, commit, and push the changes to GitHub.
+- Knit to HTML for your final submission.
+- Learning Objectives
+  - [Bash Basics](https://dcgerard.github.io/advancedr/01_basic_bash.html).
+  - [Git Basics](https://dcgerard.github.io/advancedr/01_git_github.html).
+
+# Personal Information
+
+1. **Name**: Your name/nickname 
+
+2. **Pronouns**: Your pronouns if you would like
+
+3. **Hometown**: Where you were born or grew up, City, State, Country
+
+4. **Interesting Fact about You**: What would you like others to know about you?
+
+# Git
+
+1. Create a new branch called `foo`.
+
+2. Checkout the `foo` branch.
+
+3. Below this line, write the words "bar". Save the file "lab_01.Rmd".
+
+4. Stage, commit, and push your changes to GitHub.
+
+5. On GitHub, merge `foo` into `main`.
+
+6. Pull your changes onto your local machine.
+
+# Bash
+
+Assume that the current working directory is empty. What files are in the current working directory after the following sequence of bash commands is executed?
+
+```{bash, eval = FALSE}
+touch hello.txt
+touch goodbye.Rmd
+mv goodbye.Rmd ../
+mkdir meh
+mv ../goodbye.Rmd ./probably.R
+rmdir meh
+```
